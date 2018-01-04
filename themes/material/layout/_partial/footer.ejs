@@ -1,0 +1,36 @@
+<!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    <% if(theme.scheme === 'Paradox') { %>
+        <!-- Paradox Footer Left Section -->
+        <%- partial('_partial/footer-left') %>
+
+        <div id="copyright">
+            Copyright&nbsp;©<% if(theme.copyright_since) { %>&nbsp;<%= theme.copyright_since %>&nbsp;-<% } %><script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script><%- config.title %>
+        </div>
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">
+                    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</footer>
+
+<!-- 百度自动提交 -->
+<script>
+(function(){
+    var bp = document.createElement('script')
+    var curProtocol = window.location.protocol.split(':')[0]
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js'
+    }
+    var s = document.getElementsByTagName("script")[0]
+    s.parentNode.insertBefore(bp, s)
+    console.log('成功向百度提交此页面')
+})()
+</script>
