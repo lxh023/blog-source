@@ -11,3 +11,5 @@ permalink: what-in-the-vue-webpack-project
 
 > 北京沃德博创科技有限公司内部分享使用文档
 
+本文面向对象是没有接触过vue项目但是有web开发基础的人员
+
